@@ -13,7 +13,7 @@ function App() {
       <div>
         <h1 className="font-bold text-center text-xl">Hello Vetted World!</h1>
         <p className="text-center">
-          Developed using React + Vite, and styled with Tailwind CSS.
+          Developed using React + Vite and styled with Tailwind CSS.
         </p>
         <div className="flex justify-center mt-5">
           <InputField activeUser={activeUser} />
