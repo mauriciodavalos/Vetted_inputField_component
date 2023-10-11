@@ -5,7 +5,7 @@ function App() {
   //TODO Suppose we fetch active user data here using useEffect or getting the object via props if possible
   const activeUser = {
     name: 'Juliana',
-    icon: '/src/assets/userIcon.svg',
+    icon: '/assets/userIcon.svg',
   };
 
   return (

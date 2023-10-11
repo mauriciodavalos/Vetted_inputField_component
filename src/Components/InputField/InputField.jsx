@@ -18,6 +18,7 @@ const InputField = ({ activeUser }) => {
     if (inputValue.trim() === '') {
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000); // hides after 3 seconds
+      setInputValue('');
       return;
     }
     console.log('Input submitted:', inputValue);
@@ -36,12 +37,12 @@ const InputField = ({ activeUser }) => {
           <div className="relative">
             <img
               className="absolute left-2 top-3 w-[226px] h-[32px] cursor-pointer"
-              src="/src/assets/unAssignIcon.svg"
+              src="/assets/unAssignIcon.svg"
               onClick={assignUsertoConversation}
             />
             <img
               className="absolute right-3 top-3 w-[32px] h-[32px] cursor-pointer"
-              src="/src/assets/arrowSubmitIcon.svg"
+              src="/assets/arrowSubmitIcon.svg"
             />
             <input
               value={inputValue}
@@ -64,7 +65,7 @@ const InputField = ({ activeUser }) => {
             )}
             <img
               className="absolute right-3 top-3 w-[32px] h-[32px] cursor-pointer"
-              src="/src/assets/arrowSubmitIcon.svg"
+              src="/assets/arrowSubmitIcon.svg"
               onClick={submittingMessage}
             />
             <input
